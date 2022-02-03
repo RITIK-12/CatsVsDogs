@@ -32,11 +32,11 @@ st.title(" Cat vs Dogs Image Classification")
 st.markdown("---")
 
 ## Sidebar
-st.sidebar.header(" Cat vs Dogs Image Classification")
+#st.sidebar.header(" Cat vs Dogs Image Classification")
 
 
 
-st.header("Interactive Demo")
+st.header(" Cat vs Dogs Image Classification")
 
 ## Input Fields
 uploaded_file = st.file_uploader("Upload a Image", type=["jpg","png", 'jpeg'])
