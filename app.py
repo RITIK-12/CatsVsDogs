@@ -19,12 +19,12 @@ def get_predictions(input_image):
     pred_class = class_names[tflite_model_prediction]
     print(tflite_model_prediction)
     print(pred_class)
-    score = tf.nn.softmax(tflite_model_prediction)
+    #score = tf.nn.softmax(tflite_model_prediction)
     #print(score)
     #print("This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score)))
-    inference = "This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score))
-    print(inference)
-    return inference #pred_class 
+    #inference = "This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score))
+    #print(inference)
+    return pred_class 
 
 ## Page Title
 st.set_page_config(page_title = "Cats vs Dogs Image Classification")
