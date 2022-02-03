@@ -21,7 +21,7 @@ def get_predictions(input_image):
     print(pred_class)
     score = tf.nn.softmax(tflite_model_prediction)
     #print(score)
-   `#print("This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score)))
+    #print("This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score)))
     inference = "This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score))
     print(inference)
     return inference #pred_class 
